@@ -1,0 +1,9 @@
+<div class="px-28 py-6 sticky bg-black flex justify-between">
+  <a href=<%= root_path %> class="pt-2.5">
+    <%= inline_svg_tag('icons/black_market_logo.svg') %>
+  </a>
+  <a href=<%= cart_path %> class="gap-4 rounded-lg px-3.5 py-3 shadow-sm border-[0.5px]">
+    <span class="hidden lg:inline font-sans text-white text-center font-normal text-sm">Shopping Cart</span>
+    <%= inline_svg_tag('icons/shopping_cart.svg', class: 'w-5 h-5 px-px py-0.5 lg:p-0 lg:w-4 lg:h-3.5 inline') %>
+  </a>
+</div>

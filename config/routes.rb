@@ -22,6 +22,10 @@ Rails.application.routes.draw do
     end
   end
 
+  root 'home#index'
+
+  resource :cart, only: :show
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   namespace :admin do

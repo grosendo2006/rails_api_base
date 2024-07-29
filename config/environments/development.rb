@@ -19,6 +19,9 @@ Rails.application.configure do
   # Enable server timing
   config.server_timing = true
 
+  # Compress CSS using a preprocessor.
+  config.assets.css_compressor = nil
+
   # Allow requests from the host defined in SERVER_HOST env variable
   config.hosts << ENV.fetch('SERVER_HOST', 'localhost')
 
